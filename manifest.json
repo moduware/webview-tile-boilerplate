@@ -1,0 +1,16 @@
+{
+  "id": "sample.tile.hat",
+  "name": "Tile Template",
+  "description": "Moduware tile Template",
+
+  "version": "1.0.0",
+  "changes": "Changes in this version",
+  "minumumAppVersion": "1.1.8",
+  "modules": [
+    "nexpaq.module.hat"
+  ],
+  
+  "title": "Tile Template",
+  "color": "#bada55",
+  "textColor": "black"
+}
