@@ -65,15 +65,15 @@
 
     i. **IOS**
 
-      * Connect the phone to the computer using iTunes
+      * Connect your phone to your Mac computer using iTunes
 
-      * Select phone icon and *Apps* on the left side menu
+      * Select phone icon and then select **_File Sharing_** on the left side menu
 
         ![select_phone_itunes]
 
-      * Under ***_File Sharing_** select **Moduware**
+      * Under **_File Sharing_** select **Moduware**
 
-      * From your Mac finder, drag the folder ( the one you renamed to the `id` field - example `moduware.tile.hat-workshop`) which contains tile files (minimum files needed are `manifest.json`, `icon.svg` and `index.html`) and drop them into `Moduware Documents`
+      * From your Mac finder, drag the folder you renamed from step 6 above (example: `moduware.tile.hat-workshop`) which contains the tile files and then drop them into `Moduware Documents`
 
         ![itunes_drag_and_drop]
 
@@ -88,9 +88,9 @@
 
     * Connect phone to computer using *File Manager* or *Android File Transfer* (for Mac OS)
 
-    * Create *moduware* directory/folder on your phone's hard drive root directory
+    * Create **_moduware_** directory/folder on your phone's hard drive root directory
 
-    * Copy the tile files directory/folder (example `moduware.tile.hat-workshop`) and paste them into *moduware* folder. Tile file directory/folder is the one that you renamed in step 6 above.
+    * Copy the tile files directory/folder (example: `moduware.tile.hat-workshop`) and paste them into **moduware** folder. Tile file directory/folder is the one that you renamed in step 6 above.
 
       ![moduware_folder_path_and_structure]
 
@@ -103,9 +103,9 @@
 
 8. After restarting and opening Moduware app, connect to Moduware Modpack device via bluetooth.
 
-9. When you are connected to Moduware Modpack, Press edit button (pencil icon) on the upper left and select the modules (Tempreture or LED tile depending on what you put on the `modules` field when you edited the manifest.json file). You will see the list of tiles available to use for that particular module. Select the one on the list that says **"name" DEV** where "name" is the same as the `name` field inside your manifest.json file.
+9. When you are connected to Moduware Modpack, Press edit button (pencil icon) on the upper left and select the module (Tempreture or LED tile depending on what you want to check). You will then see the list of available tiles to use for that particular module. Select the one on the list that says **"name" DEV** where "name" is the same as the `name` field inside your manifest.json file.
 
-10. You should see "I'm Your Tile Template" on your phone screen.
+10. You should see "I'm Your Tile Template" on your phone screen when everything works!
 
 [select_phone_itunes]:images/select_phone_in_itunes.png
 [itunes_drag_and_drop]:images/itunes_drag_and_drop.png
