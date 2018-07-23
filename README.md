@@ -1,68 +1,74 @@
-# webview-tile-boilerplate
+# Moduware Webview Tile Boilerplate
 
-## Template of webview tile for fast development start
-Minimal code for webview tile
+This repository is a webview tile boilerplate for beginners, intermediate and experienced developers who wants to get started with Moduware tile development. This template includes default folder and file structure, plus additional Moduware related files to make your developement process easier and faster. Clone or fork this repository and start your development. Everyone is also welcome to contribute and improve this template, just do a pull request.
 
-### WebView tile is a simple single page "website" that consists of bunch of HTML, CSS and JavaScript. Absolute mininum files for tile are:
+## How to use this boilerplate
 
-- index.html (entry point)
-- manifest.json (tile description file)
-- icon.svg (icon of your tile to show on dashboard)
+* Make sure that you have already downloaded either the Moduwate IOS app or Moduwate Android app on your phone
+* Install the webview tile on your phone by following instructions [here](https://github.com/moduware/webview-tile-boilerplate/blob/master/WEBVIEW-TILE-INSTALL-INSTRUCTIONS.md)
 
-This template also includes default folder and file structure, plus additional Moduware related files to make your developement process easier and faster. Clone or fork this repository and start your development. Everyone is also welcome to contribute and improve this template, just do a pull request.
+## What is Moduwate WebView Tile
 
-### File structure
+Simple single page "website" that consists of bunch of HTML, CSS and JavaScript.
 
-- css/ - folder to store your styles
+* Absolute mininum files for tile are:
 
-  - normilize.css - makes styles same in all browsers
+  * index.html (entry point)
+  * manifest.json (tile description file)
+  * icon.svg (icon of your tile to show on dashboard)
 
-  - styles.css - root file for your custom styles with few helpful initial styles
+## File structure
 
-- fonts/ - folder to store your non-standard fonts or icon fonts
+* css/ - folder to store your styles
 
-- img/ - folder to store your images, content releated sub-folders adviced
+  * normilize.css - makes styles same in all browsers
 
-- js/ - folder to keep you JavaScript
-  - WebViewTileHeader.js - script that can create standard header for tile which will automatically adapt it's appeareance to match platform
+  * styles.css - root file for your custom styles with few helpful initial styles
 
-  - scripts.js - root file for your custom scripts
+* fonts/ - folder to store your non-standard fonts or icon fonts
 
-- vendor/ - folder to store third party libraries, styles, etc...
+* img/ - folder to store your images, content releated sub-folders adviced
 
-- icon.svg - tile to be displayed at dashboard
+* js/ - folder to keep you JavaScript
+  * WebViewTileHeader.js - script that can create standard header for tile which will automatically adapt it's appeareance to match platform
 
-- index.html - main html file of your tile
+  * scripts.js - root file for your custom scripts
 
-- manifest.json - description of your tile, you can read more about manifests [here](https://moduware.github.io/manifest-generator/)
+* vendor/ - folder to store third party libraries, styles, etc...
+
+* icon.svg - tile to be displayed at dashboard
+
+* index.html - main html file of your tile
+
+* manifest.json - description of your tile, you can read more about manifests [here](https://moduware.github.io/manifest-generator/)
 
   Example `manifest.json` file:
 
-```json
+  ```json
 
-{
-  "id": "sample.tile.hat",
-  "name": "Tile Template",
-  "description": "Moduware tile Template",
+  {
+    "id": "sample.tile.hat",
+    "name": "Tile Template",
+    "description": "Moduware tile Template",
 
-  "version": "1.0.0",
-  "changes": "Changes in this version",
-  "minumumAppVersion": "1.1.8",
-  "modules": [
-    "nexpaq.module.hat"
-  ],
+    "version": "1.0.0",
+    "changes": "Changes in this version",
+    "minumumAppVersion": "1.1.8",
+    "modules": [
+      "nexpaq.module.hat"
+    ],
 
-  "title": "Tile Template",
-  "color": "#bada55",
-  "textColor": "black"
-}
+    "title": "Tile Template",
+    "color": "#bada55",
+    "textColor": "black"
+  }
 
-```
+  ```
 
-  - `id` field - `"namespace.tile.tileName"` and an example above `"sample.tile.hat"`
-    - `namespace` first part can be anything that describe the creator etc.
-    - `tile` the second part must be the word `'tile'` (required)
-    - `tileName` the last part is the tile name which preferably should contain the module name, like `led` or `hat` plus some description of what it does. An example tileName would be `hat-workshop` or `led-workshop`
+  * `id` field - `"namespace.tile.tileName"` and an example above `"sample.tile.hat"`
+    * `namespace` first part can be anything that describe the creator etc.
+    * `tile` the second part must be the word `'tile'` (required)
+    * `tileName` the last part is the tile name which preferably should contain the module name, like `led` or `hat` plus some description of what it does. An example tileName would be `hat-workshop` or `led-workshop`
 
   Example tile id
 
@@ -90,11 +96,11 @@ This template also includes default folder and file structure, plus additional M
 
   ```
 
-  - `name` field - how your tile is going to appear on the list of tile for a given module
+  * `name` field - how your tile is going to appear on the list of tile for a given module
 
-  - `“description”` is additional text that is going to appear below the name field on the given list of tiles available
+  * `“description”` is additional text that is going to appear below the name field on the given list of tiles available
 
-  - `modules` -  is array field containing the modules you are targeting, for now lets keep it simple by adding only one tile in the array, below is a list of standard module names to be used
+  * `modules` -  is array field containing the modules you are targeting, for now lets keep it simple by adding only one tile in the array, below is a list of standard module names to be used
 
     ```json
 
@@ -106,8 +112,8 @@ This template also includes default folder and file structure, plus additional M
     ],
 
     ```
-  - `title` field - the name of the tile that appears when the different connected tiles are displayed on the webview main page
+  * `title` field - the name of the tile that appears when the different connected tiles are displayed on the webview main page
 
-  - `color` field - the background color of the tile that appears when the different connected tiles are displayed on the webview main page
+  * `color` field - the background color of the tile that appears when the different connected tiles are displayed on the webview main page
 
-  - `textColor` field - the text color of the tile title that appears when the different connected tiles are displayed on the webview main page
+  * `textColor` field - the text color of the tile title that appears when the different connected tiles are displayed on the webview main page
