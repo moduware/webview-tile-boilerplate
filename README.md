@@ -5,7 +5,11 @@ This repository is a webview tile boilerplate for beginners, intermediate and ex
 ## How to use this boilerplate
 
 * Make sure that you have already downloaded either the Moduwate IOS app or Moduwate Android app on your phone
-* Install the webview tile on your phone by following instructions [here](https://github.com/moduware/webview-tile-boilerplate/blob/master/WEBVIEW-TILE-INSTALL-INSTRUCTIONS.md)
+* Download the webview tile boilerplate on your computer
+* Open the webview-tile-boilerplate directory on your code editor of choice (VS Code, Atom, Sublime Text, etc.)
+* Edit the manifest.json file and don't forget to save it
+* Copy the tile files to your phone
+* For a detailed instructions with screenshots on how to do those steps above click [here](https://github.com/moduware/webview-tile-boilerplate/blob/master/WEBVIEW-TILE-INSTALL-INSTRUCTIONS.md)
 
 ## What is Moduwate WebView Tile
 
@@ -41,6 +45,8 @@ Simple single page "website" that consists of bunch of HTML, CSS and JavaScript.
 * index.html - main html file of your tile
 
 * manifest.json - description of your tile, you can read more about manifests [here](https://moduware.github.io/manifest-generator/)
+
+## Manifest
 
   Example `manifest.json` file:
 
