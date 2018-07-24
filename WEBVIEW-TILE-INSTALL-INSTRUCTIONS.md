@@ -53,7 +53,7 @@
 
     Note: Tile id uses reverse domain notation as following entity format: "namespace".**tile**."name" - where **tile** is a requiered type
 
-    See a description of the the different manifest.json fields [here](https://github.com/moduware/webview-tile-boilerplate/blob/master/README.md#file-structure)
+    See a description of the the different manifest.json fields [here](https://github.com/moduware/webview-tile-boilerplate/blob/master/README.md#manifest)
 
     Don't forget to save the changes you made to the `mainifest.json` file.
 
