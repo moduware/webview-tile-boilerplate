@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('WebViewApiReady', function() {
 
   // start listening to received data from all modules by 
-  // subscribing to data received event
+  // subscribing to DataReceived event
   Moduware.v0.API.Module.addEventListener('DataReceived', dataReceivedHandler);
 
   // the Nexpaq.Arguments object carries the data about the targeted module 
