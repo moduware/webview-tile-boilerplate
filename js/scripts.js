@@ -1,6 +1,4 @@
 
-// shouldn't we put all the below code in an iffy??
-
 document.addEventListener('DOMContentLoaded', function() {
   // Creating header on top of tile
   WebViewTileHeader.create('Tile Template');
@@ -14,26 +12,22 @@ document.addEventListener('WebViewApiReady', function() {
   // subscribing to DataReceived event
   Moduware.v0.API.Module.addEventListener('DataReceived', dataReceivedHandler);
 
-  // the Nexpaq.Arguments object carries the data about the targeted module 
-  // (specified in the manifest.json) like slot number and module uuid
-  var targetModuleUuid = Nexpaq.Arguments[0];
-
-  Moduware.v0.API.Module.SendCommand(targetModuleUuid, 'StartFlashingRgbLeds', [65535, 65535, 255, 255, 255]);
+  // this will turn on the light in the LED Module once the tile is loaded as an indication that it work
+  Moduware.v0.API.Module.SendCommand(Moduware.Arguments.uuid, 'SetRGB', [255, 255, 255]);
 
   Moduware.v0.API.addEventListener('BeforeExit', function() {
     // do your clean up code here, like switching off sensors or light
+    Moduware.v0.API.Module.SendCommand(Moduware.Arguments.uuid, 'TurnOffLeds', []);
   });
 
 });
 
 // handles the event of receivng data from modules
 function dataReceivedHandler(event) {
-
-  var targetModuleUuid = Nexpaq.Arguments[0];
-
+  
   // we need to make sure that the data received is from the module
   // that we are targeting
-  if(event.moduleUuid !== targetModuleUuid) return;
+  if (event.moduleUuid !== Moduware.Arguments.uuid) return;
 
   // each module can have more than one event, so we 
   // must check for the event source property to know which event 
