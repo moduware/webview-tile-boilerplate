@@ -12,9 +12,3 @@ body {
   padding-top: 60px;
   background-color: white;
 }
-
-.ambient-temperature,
-.object-temperature {
-  display: flex;
-  justify-content: space-between;
-}
