@@ -32,5 +32,7 @@ function dataReceivedHandler(event) {
   // each module can have more than one event, so we 
   // must check for the event source property to know which event 
   // is invoked
-  if(event.dataSource === 'SensorValue') {}
+  if(event.dataSource === 'SensorValue') {
+    // our code here
+  }
 }
